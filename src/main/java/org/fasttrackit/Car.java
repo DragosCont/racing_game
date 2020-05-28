@@ -9,9 +9,9 @@ public class Car {
     double fuelLevel;
     double maxSpeed;
     double totalTraveledDistance;
-
     boolean damaged;
     int doorCount;
+    Engine engine;
 
 
 
