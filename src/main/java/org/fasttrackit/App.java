@@ -23,6 +23,8 @@ public class App
         carReference.engine.capacity = 1900;
         System.out.println(carReference.engine.manufacturer);
 
+        carReference.accelerate(60,1);
+
 
         System.out.println(carReference.make);
         System.out.println(carReference.model);
@@ -52,6 +54,9 @@ public class App
 
         System.out.println(car2.make);
         System.out.println(carReference.make);
+
+
+        car2.accelerate(100,1);
 
 
     }
