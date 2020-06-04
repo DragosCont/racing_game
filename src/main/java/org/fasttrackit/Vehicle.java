@@ -35,6 +35,10 @@ public class Vehicle {
 
     }
 
+    public void makeSound() {
+        System.out.println("Make way!!!");
+    }
+
 }
 
 

@@ -26,6 +26,12 @@ public class App
         carReference.accelerate(60,1);
 
 
+        System.out.println("Total distance before repair:" +carReference.totalTraveledDistance);
+        Mechanic mechanic = new Mechanic();
+        mechanic.repair(carReference);
+        System.out.println("Total distance after repair:" +carReference.totalTraveledDistance);
+
+
         System.out.println(carReference.make);
         System.out.println(carReference.model);
         System.out.println(carReference.mileage);
