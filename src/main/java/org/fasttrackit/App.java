@@ -58,6 +58,13 @@ public class App
 
         car2.accelerate(100,1);
 
+//        System.out.println("Modulo examples:");
+//        System.out.println(4 % 2);
+//        System.out.println(4 % 3);
+//
+//        System.out.println("Is 4 even?");
+//        System.out.println(4 % 2 == 0);
+
 
     }
 }
