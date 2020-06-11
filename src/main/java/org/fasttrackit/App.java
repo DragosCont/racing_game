@@ -8,17 +8,24 @@ public class App
 {
     public static void main( String[] args )
     {
-        Game game = new Game();
-        game.start();
+      Game game = new Game();
+      game.start();
 //        System.out.println( "Welcome to the Racing Game!" );
-//
-        Engine engine = new Engine();
-        engine.manufacturer = "Renault";
 
-        AutoVehicle autoVehicle = new AutoVehicle(engine);
-       Car car =  new Car(engine);
-       car.make= "Dacia";
-        System.out.println(car.make);
+        //String a = "test";
+     //   String b = "test";
+      //  String c = new String("test");
+
+       // System.out.println("a==b:" + (a==b));
+       // System.out.println("a==c:" + (a==c));
+
+   //     Engine engine = new Engine();
+   //     engine.manufacturer = "Renault";
+
+    //    AutoVehicle autoVehicle = new AutoVehicle(engine);
+    //   Car car =  new Car(engine);
+   //    car.make= "Dacia";
+   //     System.out.println(car.make);
 
 
 
