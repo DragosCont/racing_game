@@ -2,6 +2,12 @@ package org.fasttrackit;
 
 public class Vehicle {
 
+
+    //class variable / static variable
+    static int totalVehicleCount;
+
+
+    // instance variables
     String make;
     String model;
     String color;
@@ -11,6 +17,10 @@ public class Vehicle {
     double totalTraveledDistance;
     boolean damaged;
 
+    public Vehicle() {
+        totalVehicleCount++;
+
+    }
 
     public double accelerate(double speed, double durationInHours) {
 

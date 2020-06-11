@@ -8,9 +8,23 @@ public class App
 {
     public static void main( String[] args )
     {
-      Game game = new Game();
-      game.start();
+       Game game = new Game();
+       game.start();
 //        System.out.println( "Welcome to the Racing Game!" );
+
+       //  Vehicle vehicle1 = new Vehicle();
+   //     vehicle1.totalVehicleCount = 1;
+
+        // Vehicle vehicle2 = new Vehicle();
+       // vehicle2.totalVehicleCount = 4;
+
+       // Vehicle.totalVehicleCount = 10;
+
+      //  System.out.println("Total count from vehicle1: " + vehicle1.totalVehicleCount);
+     //   System.out.println("Total count from vehicle2: " + vehicle2.totalVehicleCount);
+      //  System.out.println("Total count from vehicle class: " + Vehicle.totalVehicleCount);
+
+
 
         //String a = "test";
      //   String b = "test";
