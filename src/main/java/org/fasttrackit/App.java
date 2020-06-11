@@ -12,6 +12,17 @@ public class App
         game.start();
 //        System.out.println( "Welcome to the Racing Game!" );
 //
+        Engine engine = new Engine();
+        engine.manufacturer = "Renault";
+
+        AutoVehicle autoVehicle = new AutoVehicle(engine);
+       Car car =  new Car(engine);
+       car.make= "Dacia";
+        System.out.println(car.make);
+
+
+
+
 //        Car carReference = new Car();
 //        carReference.make = "Skoda";
 //        carReference.model = "Fabia";
