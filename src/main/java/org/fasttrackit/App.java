@@ -24,10 +24,30 @@ public class App
 
       //  System.out.println("Total count from vehicle1: " + vehicle1.totalVehicleCount);
      //   System.out.println("Total count from vehicle2: " + vehicle2.totalVehicleCount);
-      //  System.out.println("Total count from vehicle class: " + Vehicle.totalVehicleCount);
+      //  System.out.println("Total count from vehicle class: " + Vehicle.totalVehicleCoun
 
-
-
+//        //polymorphism
+//        Vehicle vehicle = new CheatingVehicle();
+//        vehicle.setMake("Cheating");
+//
+//        // object type determines method implementation
+//        vehicle.accelerate(60,1);
+//
+//        System.out.println("Accelerate with 1 param");
+//        vehicle.accelerate(60);
+//
+//
+//        //variable type determines what methods can be invoked
+//
+//        //type casting
+//        ((CheatingVehicle) vehicle).cheat();
+//        // same as above
+////        CheatingVehicle cheatingVehicle = (CheatingVehicle) vehicle;
+////        cheatingVehicle.cheat();
+//        if (vehicle instanceof CheatingVehicle) {
+//
+//            ((CheatingVehicle) vehicle).cheat();
+//        }
 
 
         //String a = "test";
