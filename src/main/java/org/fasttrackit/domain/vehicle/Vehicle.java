@@ -1,6 +1,8 @@
 package org.fasttrackit.domain.vehicle;
 
-public class Vehicle {
+import org.fasttrackit.domain.Mobile;
+
+public abstract class Vehicle implements Mobile {
 
 
     //class variable / static variable
@@ -41,8 +43,8 @@ public class Vehicle {
             System.out.println("Valid speed entered.");
         }
 
-        if (damaged){
-            System.out.println("The vehicle is damaged. You cannot accelerate.");
+        if (!canMove()){
+            System.out.println("You cannot accelerate.");
             return 0;
         }
 
@@ -71,6 +73,16 @@ public class Vehicle {
 
         return distance;
 
+    }
+
+    @Override
+    public String getName() {
+        return make;
+    }
+
+    @Override
+    public boolean canMove() {
+        return fuelLevel > 0 && !damaged;
     }
 
     protected Vehicle reset () {
