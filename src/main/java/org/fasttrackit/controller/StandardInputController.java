@@ -17,4 +17,12 @@ public class StandardInputController {
         return scanner.nextInt();
     }
 
+    public String getVehicleMakeFromUser(){
+
+        System.out.println("Please enter vehicle make: ");
+        Scanner scanner = new Scanner(System.in);
+        return scanner.nextLine();
+
+    }
+
 }
