@@ -25,4 +25,11 @@ public class StandardInputController {
 
     }
 
+    public double getAccelerationSpeedFromUser(){
+        System.out.println("Insert acceleration: ");
+        Scanner scanner = new Scanner(System.in);
+        return scanner.nextDouble();
+
+    }
+
 }

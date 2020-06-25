@@ -27,7 +27,7 @@ public class Game {
 
         initializeCompetitors();
 
-        System.out.println(competitors);
+        playOneRound();
 
 
     }
@@ -50,6 +50,19 @@ public class Game {
         }
 
 
+
+    }
+
+    private void playOneRound(){
+
+        System.out.println("New round");
+
+        // enhaced for (for-each)
+        for (Vehicle competitor : competitors) {
+            double speed = controller.getAccelerationSpeedFromUser();
+
+            competitor .accelerate(speed);
+        }
 
     }
 
