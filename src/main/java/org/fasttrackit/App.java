@@ -2,6 +2,9 @@ package org.fasttrackit;
 
 import org.fasttrackit.service.Game;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Hello world!
  *
@@ -12,6 +15,17 @@ public class App
     {
        Game game = new Game();
        game.start();
+
+//        List<String>authors = new ArrayList<>();
+//        authors.add("Tolkien");
+//        authors.add("C.S Lewis");
+//        authors.add("J.K Rowling");
+//        authors.add("Eminescu");
+//
+//
+//        boolean eminescuFavouriteAuthor = authors.contains(Eminescu);
+
+
 //        System.out.println( "Welcome to the Racing Game!" );
 
        //  Vehicle vehicle1 = new Vehicle();
