@@ -17,6 +17,16 @@ public class Game {
 
         initializeTracks();
 
+        Track selectedTrack = getSelectedTrack();
+        System.out.println("You have selected: " + selectedTrack.getName());
+
+
+    }
+
+    private Track getSelectedTrack () {
+
+        int optionNumber = controller.getTrackNumberFromUser();
+        return tracks[optionNumber - 1];
 
     }
 
