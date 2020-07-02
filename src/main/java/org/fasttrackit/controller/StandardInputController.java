@@ -2,6 +2,8 @@ package org.fasttrackit.controller;
 
 import org.fasttrackit.controller.utils.ScannerUtils;
 
+import java.util.InputMismatchException;
+
 public class StandardInputController {
 
     public int getPlayerCountFromUser() {
@@ -32,7 +34,14 @@ public class StandardInputController {
 
         System.out.println("Insert acceleration: ");
 
-        return ScannerUtils.readNextSingleDouble();
+        try {
+            return ScannerUtils.readNextSingleDouble();
+        } catch (InputMismatchException e) {
+            System.out.println("You have entered an invalid value. Please try again.");
+
+            //recursion
+            return getAccelerationSpeedFromUser();
+        }
 
     }
 
