@@ -1,5 +1,6 @@
 package org.fasttrackit;
 
+import org.fasttrackit.exception.InvalidOptionSelectedException;
 import org.fasttrackit.service.Game;
 
 import java.util.*;
@@ -10,8 +11,7 @@ import java.util.*;
  */
 public class App 
 {
-    public static void main( String[] args )
-    {
+    public static void main( String[] args ) throws InvalidOptionSelectedException {
        Game game = new Game();
        game.start();
 
