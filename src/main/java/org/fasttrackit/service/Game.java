@@ -42,6 +42,7 @@ public class Game {
         if (winnerNotKnown){
             System.out.println("Game over.");
         }
+        processRankingTable();
 
     }
 
@@ -51,7 +52,7 @@ public class Game {
         System.out.println("Rankings: ");
 
         for (int i = 0; i<competitors.size(); i++) {
-            System.out.println((i+1) + "."+competitors.get(i).getName()+":"+competitors.get(i).getTotalTraveledDistance());
+            System.out.println((i+1) + ". " +competitors.get(i).getName() + ": " + competitors.get(i).getTotalTraveledDistance());
         }
     }
 
