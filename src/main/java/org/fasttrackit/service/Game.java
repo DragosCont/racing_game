@@ -38,6 +38,10 @@ public class Game {
             playOneRound();
         }
 
+        if (winnerNotKnown){
+            System.out.println("Game over.");
+        }
+
     }
 
     private void initializeCompetitors(){
@@ -62,9 +66,9 @@ public class Game {
     }
 
     private void playOneRound(){
-
+        System.out.println();
         System.out.println("New round");
-
+        System.out.println();
         // enhaced for (for-each)
         for (Mobile competitor : competitors) {
             if (!competitor.canMove()){
