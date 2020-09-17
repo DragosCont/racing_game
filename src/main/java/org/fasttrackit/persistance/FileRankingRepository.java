@@ -23,7 +23,7 @@ public class FileRankingRepository implements RankingRepository {
 
     @Override
     public void addRankingItem(int rank, String competitorName, double totalDistance) {
-        String rankingItem = rank + ". " + competitorName + ": " + totalDistance + "km";
+        String rankingItem = rank + ". " + competitorName + ": " + totalDistance + " km";
 
         try {
             bufferedWriter.write(rankingItem);
